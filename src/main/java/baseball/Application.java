@@ -117,9 +117,10 @@ public class Application {
         }*/
 
         for (int i = 0; i < computer.size(); i++) {
-            if(computer.contains(Integer.valueOf(number.charAt(i)) - 48) &&  computer.get(i) == Integer.valueOf(number.charAt(i)) - 48) {
+            int numberInt = Integer.valueOf(number.charAt(i)) - 48;
+            if(computer.contains(numberInt) &&  computer.get(i) == numberInt) {
                 strike++;
-            } else if (computer.contains(Integer.valueOf(number.charAt(i)) - 48) &&  computer.get(i) != Integer.valueOf(number.charAt(i)) - 48) {
+            } else if (computer.contains(numberInt) &&  computer.get(i) != numberInt) {
                 ball++;
             }
         }
