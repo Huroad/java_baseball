@@ -11,7 +11,7 @@ public class GameControl {
         public GameControl() {
             this.computer = new Computer();
         }
-    public void start() {
+        public void start() {
         // 컴퓨터 랜덤숫자
         // 다시하기를 눌렀을때만 숫자를 초기화 -- 이부분을 메서드로 만들어서 호출하면 끝
         List<Integer>  computerlist = numArr();
